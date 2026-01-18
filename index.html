@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>农脉AI｜阳江永兴农脉 AI 国际渔田秘境</title>
+    <meta name="description" content="以5000亩生态鱼塘为核心，打造水产养殖、AI科技研学、文旅休闲融合的农文旅示范基地。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var redirected = params.get("p");
+        if (!redirected) return;
+        params.delete("p");
+        var decoded = decodeURIComponent(redirected);
+        var search = params.toString();
+        var newUrl = decoded + (search ? "?" + search : "") + window.location.hash;
+        window.history.replaceState(null, "", newUrl);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

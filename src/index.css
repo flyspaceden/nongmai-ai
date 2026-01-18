@@ -1,0 +1,232 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-text-0 min-h-screen;
+    background: radial-gradient(circle at 15% 20%, rgba(20, 184, 166, 0.18), transparent 35%),
+      radial-gradient(circle at 80% 10%, rgba(245, 158, 11, 0.12), transparent 40%),
+      radial-gradient(circle at 50% 80%, rgba(34, 197, 94, 0.12), transparent 40%),
+      linear-gradient(180deg, #070b12, #0f172a);
+  }
+
+  img {
+    @apply block max-w-full rounded-2xl;
+  }
+}
+
+@layer components {
+  .container {
+    width: min(100% - 48px, 1200px);
+    margin: 0 auto;
+  }
+
+  .section {
+    @apply py-24 relative;
+  }
+
+  .section-tight {
+    @apply py-16;
+  }
+
+  .eyebrow {
+    @apply uppercase tracking-[0.2em] text-xs text-text-2;
+  }
+
+  .section-title {
+    @apply mt-3 text-2xl md:text-4xl font-semibold leading-tight;
+  }
+
+  .section-subtitle {
+    @apply mt-4 text-lg leading-relaxed text-text-1;
+  }
+
+  .nm-grid {
+    @apply grid gap-6;
+  }
+
+  .nm-grid-2 {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  .nm-grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .nm-grid-4 {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .card {
+    @apply rounded-2xl border border-white/10 bg-white/5 p-6 shadow-deep backdrop-blur;
+  }
+
+  .tag {
+    @apply inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/20 px-3 py-1 text-xs text-white;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-2 rounded-full border border-highlight/50 bg-highlight/20 px-3 py-1 text-xs text-highlight;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold transition-transform duration-200;
+  }
+
+  .btn:hover {
+    @apply -translate-y-0.5;
+  }
+
+  .btn.primary {
+    @apply bg-gradient-to-br from-sky-400 to-primary text-slate-900 shadow-xl;
+  }
+
+  .btn.ghost {
+    @apply border border-white/20 bg-white/5 text-white;
+  }
+
+  header {
+    @apply sticky top-0 z-20 border-b border-white/10 bg-slate-950/70 backdrop-blur;
+  }
+
+  .navbar {
+    @apply flex items-center justify-between py-4;
+  }
+
+  .logo {
+    @apply flex items-center gap-3 text-lg font-semibold;
+  }
+
+  .logo span {
+    @apply text-primary;
+  }
+
+  .nav-links {
+    @apply hidden items-center gap-5 lg:flex;
+  }
+
+  .nav-item {
+    @apply relative text-sm text-text-1;
+  }
+
+  .nav-item > a {
+    @apply inline-flex items-center gap-2 px-2 py-2;
+  }
+
+  .dropdown {
+    @apply absolute left-0 top-[120%] hidden min-w-[220px] flex-col gap-2 rounded-xl border border-white/10 bg-slate-950/95 p-3;
+  }
+
+  .nav-item:hover .dropdown {
+    display: flex;
+  }
+
+  .dropdown a {
+    @apply rounded-lg px-2 py-2 text-xs text-text-1;
+  }
+
+  .dropdown a:hover {
+    @apply bg-white/5 text-white;
+  }
+
+  .nav-cta {
+    @apply hidden items-center gap-3 lg:flex;
+  }
+
+  .nav-toggle {
+    @apply inline-flex text-white lg:hidden;
+  }
+
+  .mobile-menu {
+    @apply hidden flex-col gap-2 pb-6 pt-2 text-sm text-text-1 lg:hidden;
+  }
+
+  .mobile-menu.open {
+    @apply flex;
+  }
+
+  .hero {
+    @apply pt-28 pb-20;
+  }
+
+  .hero-content {
+    @apply grid items-center gap-10 lg:grid-cols-2;
+  }
+
+  .hero h1 {
+    @apply text-3xl md:text-5xl font-semibold leading-tight;
+  }
+
+  .hero p {
+    @apply mt-5 text-lg leading-relaxed text-text-1;
+  }
+
+  .hero-actions {
+    @apply mt-6 flex flex-wrap gap-3;
+  }
+
+  .hero-card {
+    @apply rounded-3xl border border-white/10 bg-slate-900/60 p-4 shadow-deep;
+  }
+
+  .metrics {
+    @apply mt-8 grid gap-4 sm:grid-cols-3;
+  }
+
+  .metric {
+    @apply rounded-2xl border border-white/10 bg-slate-900/60 p-4;
+  }
+
+  .metric strong {
+    @apply text-xl;
+  }
+
+  .ai-panel {
+    @apply rounded-3xl border border-sky-400/40 bg-sky-400/10 p-7;
+  }
+
+  .ai-panel ul {
+    @apply mt-4 grid gap-3 text-text-1;
+  }
+
+  .ai-panel li {
+    @apply flex gap-2;
+  }
+
+  .ai-panel li::before {
+    content: "●";
+    color: #14b8a6;
+  }
+
+  .timeline {
+    @apply grid gap-5;
+  }
+
+  .timeline-item {
+    @apply border-l-2 border-primary/40 pl-5;
+  }
+
+  .footer-grid {
+    @apply grid gap-5 text-sm text-text-1 sm:grid-cols-2 lg:grid-cols-3;
+  }
+
+  footer {
+    @apply border-t border-white/10 py-12;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
