@@ -15,7 +15,7 @@ export default function CompanyPartners() {
                 提交合作需求
               </Link>
               <Link className="btn ghost" to="/company/nongmai-ai">
-                了解Nongmai AI
+                了解农脉AI
               </Link>
             </div>
           </div>
