@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
 import Layout from "../../components/Layout.jsx";
 
+const heroBg =
+  "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2000&q=80";
+
 export default function FamilyFun() {
   return (
     <Layout lang="en" ctaLabel="Book Family Visit" ctaTo="/en/contact">
-      <section className="hero">
+      <section className="hero hero-splash">
+        <div className="hero-splash-bg" style={{ backgroundImage: `url(${heroBg})` }}></div>
+        <div className="hero-splash-overlay"></div>
         <div className="container hero-content">
           <div>
             <span className="tag">Age-Based Activities · Natural Play</span>
@@ -19,20 +24,36 @@ export default function FamilyFun() {
               </Link>
             </div>
           </div>
-          <div className="hero-card">
-            <img
-              src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1600&q=80"
-              alt="Family fun"
-            />
-          </div>
         </div>
       </section>
 
       <section className="section">
+        <div className="container">
+          <span className="eyebrow">Age-Based Fun</span>
+          <h2 className="section-title">Age-Based Experience Matrix</h2>
+          <p className="section-subtitle">Different levels of play for different ages, safe and engaging.</p>
+          <div className="age-grid reveal" style={{ marginTop: "24px" }}>
+            <div className="age-card">
+              <strong>Age 3-6</strong>
+              <p>Touch pools, small catches, light farming play.</p>
+            </div>
+            <div className="age-card">
+              <strong>Age 7-12</strong>
+              <p>Fishing contests, muddy catch challenges, nature exploration.</p>
+            </div>
+            <div className="age-card">
+              <strong>Family Co-creation</strong>
+              <p>Team tasks, parent-child challenges, and photo spots.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-tight">
         <div className="container nm-grid nm-grid-2 reveal">
           <div className="card">
             <strong>Fishing Playgrounds</strong>
-            <p>3–6: touch & catch pools. 7–12: fishing contests and muddy catch challenges. Gear rental and fish processing available.</p>
+            <p>Gear rental, fish feed, and on-site processing services.</p>
           </div>
           <div className="card">
             <strong>Natural Play Zone</strong>

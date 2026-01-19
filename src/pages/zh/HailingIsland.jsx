@@ -29,14 +29,33 @@ export default function HailingIsland() {
       </section>
 
       <section className="section">
-        <div className="container nm-grid nm-grid-2 reveal">
-          <div className="card">
-            <strong>南海1号博物馆</strong>
-            <p>海洋文化与考古主题的重要窗口，适合研学与亲子科普。</p>
+        <div className="container">
+          <span className="eyebrow">Island Highlights</span>
+          <h2 className="section-title">海陵岛目的地亮点</h2>
+          <p className="section-subtitle">海洋文化、渔港生活与海岸风光融合成一条海岛慢旅线路。</p>
+          <div className="stay-gallery reveal" style={{ marginTop: "24px" }}>
+            <img
+              src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80"
+              alt="海岛风光"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+              alt="海岸步道"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+              alt="渔港日落"
+            />
           </div>
-          <div className="card">
-            <strong>闸坡国际渔港 + 渔场</strong>
-            <p>了解海上作业与渔港生活，连接海洋经济与地方渔业历史。</p>
+          <div className="nm-grid nm-grid-2 reveal" style={{ marginTop: "24px" }}>
+            <div className="card">
+              <strong>南海1号博物馆</strong>
+              <p>海洋文化与考古主题的重要窗口，适合研学与亲子科普。</p>
+            </div>
+            <div className="card">
+              <strong>闸坡国际渔港 + 渔场</strong>
+              <p>了解海上作业与渔港生活，连接海洋经济与地方渔业历史。</p>
+            </div>
           </div>
         </div>
       </section>

@@ -4,7 +4,7 @@ import Layout from "../../components/Layout.jsx";
 export default function CompanyPartners() {
   return (
     <Layout lang="en" ctaLabel="Submit Request" ctaTo="/en/contact">
-      <section className="hero">
+      <section className="hero hero-centered">
         <div className="container hero-content">
           <div>
             <span className="tag">Build Together · Grow Together</span>
@@ -18,12 +18,6 @@ export default function CompanyPartners() {
                 About Nongmai AI
               </Link>
             </div>
-          </div>
-          <div className="hero-card">
-            <img
-              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80"
-              alt="Partnership"
-            />
           </div>
         </div>
       </section>
@@ -45,6 +39,31 @@ export default function CompanyPartners() {
           <div className="card">
             <strong>Brand Collaborations</strong>
             <p>Co-branded events, media campaigns, and live streaming.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-tight">
+        <div className="container">
+          <span className="eyebrow">Cooperation Flow</span>
+          <h2 className="section-title">Partnership Process</h2>
+          <div className="steps-grid reveal" style={{ marginTop: "24px" }}>
+            <div className="step-card">
+              <strong>Submit Needs</strong>
+              <p>Goals, group size, budget, and timeline.</p>
+            </div>
+            <div className="step-card">
+              <strong>Co-create Plan</strong>
+              <p>Activity flow, curriculum, and materials list.</p>
+            </div>
+            <div className="step-card">
+              <strong>Pilot Run</strong>
+              <p>Small-scale trial and optimization.</p>
+            </div>
+            <div className="step-card">
+              <strong>Long-term Program</strong>
+              <p>Annual plan and ongoing collaboration.</p>
+            </div>
           </div>
         </div>
       </section>

@@ -29,18 +29,35 @@ export default function HailingPingang() {
       </section>
 
       <section className="section">
-        <div className="container nm-grid nm-grid-3 reveal">
-          <div className="card">
-            <strong>休闲度假</strong>
-            <p>民宿、餐饮、露天烧烤场、钓鱼、小海洋科普馆，满足家庭短途度假需求。</p>
-          </div>
-          <div className="card">
-            <strong>研学与科普</strong>
-            <p>中小学生科普基地与身心成长支持项目，结合水产种苗繁殖与生产实践。</p>
-          </div>
-          <div className="card">
-            <strong>生态与农事</strong>
-            <p>鸟类湿地公园、植物观察、农事操作基地、碱水稻与种菜基地。</p>
+        <div className="container">
+          <span className="eyebrow">Scenario Matrix</span>
+          <h2 className="section-title">综合体体验场景矩阵</h2>
+          <p className="section-subtitle">从休闲到研学，从生态到科普，形成全天候体验组合。</p>
+          <div className="matrix-grid reveal" style={{ marginTop: "24px" }}>
+            <div className="matrix-card">
+              <strong>休闲度假</strong>
+              <p>民宿、餐饮、露天烧烤场、钓鱼、小海洋科普馆。</p>
+            </div>
+            <div className="matrix-card">
+              <strong>研学与科普</strong>
+              <p>中小学生科普与身心成长支持项目。</p>
+            </div>
+            <div className="matrix-card">
+              <strong>生态与农事</strong>
+              <p>鸟类湿地公园、植物观察与农事操作基地。</p>
+            </div>
+            <div className="matrix-card">
+              <strong>AI学习基地</strong>
+              <p>AI农业科普与可视化数据展陈。</p>
+            </div>
+            <div className="matrix-card">
+              <strong>碱水稻基地</strong>
+              <p>特色作物展示与生态实验田。</p>
+            </div>
+            <div className="matrix-card">
+              <strong>中草药科研</strong>
+              <p>中草药示范种植与健康科普。</p>
+            </div>
           </div>
         </div>
       </section>

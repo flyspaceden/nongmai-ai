@@ -29,22 +29,27 @@ export default function CompanyNongmai() {
       </section>
 
       <section className="section">
-        <div className="container nm-grid nm-grid-4 reveal">
-          <div className="card">
-            <strong>AI+感知</strong>
-            <p>水质、气象、视频与物联网数据采集与告警。</p>
-          </div>
-          <div className="card">
-            <strong>AI+决策</strong>
-            <p>投喂策略、水质调控、病害风险与产量预测。</p>
-          </div>
-          <div className="card">
-            <strong>AI+追溯</strong>
-            <p>从种苗到流通的批次化追踪与合规台账。</p>
-          </div>
-          <div className="card">
-            <strong>AI+科普研学</strong>
-            <p>课程管理、互动展陈、学习记录与证书体系。</p>
+        <div className="container">
+          <span className="eyebrow">AI Stack</span>
+          <h2 className="section-title">AI农业能力架构</h2>
+          <p className="section-subtitle">从感知到决策，再到运营与研学，形成系统化能力。</p>
+          <div className="steps-grid reveal" style={{ marginTop: "24px" }}>
+            <div className="step-card">
+              <strong>AI+感知</strong>
+              <p>水质、气象、视频与物联网数据采集与告警。</p>
+            </div>
+            <div className="step-card">
+              <strong>AI+决策</strong>
+              <p>投喂策略、水质调控、病害风险与产量预测。</p>
+            </div>
+            <div className="step-card">
+              <strong>AI+追溯</strong>
+              <p>从种苗到流通的批次化追踪与合规台账。</p>
+            </div>
+            <div className="step-card">
+              <strong>AI+科普研学</strong>
+              <p>课程管理、互动展陈、学习记录与证书体系。</p>
+            </div>
           </div>
         </div>
       </section>

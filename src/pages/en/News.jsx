@@ -4,7 +4,7 @@ import Layout from "../../components/Layout.jsx";
 export default function News() {
   return (
     <Layout lang="en">
-      <section className="hero">
+      <section className="hero hero-centered">
         <div className="container hero-content">
           <div>
             <span className="tag">Announcements · Programs · Updates</span>
@@ -16,37 +16,35 @@ export default function News() {
               </Link>
             </div>
           </div>
-          <div className="hero-card">
-            <img
-              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80"
-              alt="News"
-            />
-          </div>
         </div>
       </section>
 
       <section className="section">
-        <div className="container nm-grid nm-grid-2 reveal">
-          <article className="card">
-            <strong>Spring Flower & Fishing Festival Opens</strong>
-            <p>Family programs, flower fields, and fishing competitions now open.</p>
-            <span className="tag">Event</span>
-          </article>
-          <article className="card">
-            <strong>AI Study Curriculum Released</strong>
-            <p>Smart labs, machinery museum, and natural education modules.</p>
-            <span className="tag">Study</span>
-          </article>
-          <article className="card">
-            <strong>Yongxing Traceability Upgrade</strong>
-            <p>Smart aquaculture and full-chain traceability system rollout.</p>
-            <span className="tag">Partnership</span>
-          </article>
-          <article className="card">
-            <strong>Hailing Gateway Routes Published</strong>
-            <p>Pingang + Hailing two-day routes now available (display).</p>
-            <span className="tag">Routes</span>
-          </article>
+        <div className="container">
+          <span className="eyebrow">Featured</span>
+          <h2 className="section-title">Highlights</h2>
+          <div className="news-grid reveal" style={{ marginTop: "24px" }}>
+            <article className="card" style={{ gridColumn: "span 2" }}>
+              <strong>Spring Flower & Fishing Festival Opens</strong>
+              <p>Family programs, flower fields, and fishing competitions now open.</p>
+              <span className="tag">Event</span>
+            </article>
+            <article className="card">
+              <strong>AI Study Curriculum Released</strong>
+              <p>Smart labs, machinery museum, and natural education modules.</p>
+              <span className="tag">Study</span>
+            </article>
+            <article className="card">
+              <strong>Yongxing Traceability Upgrade</strong>
+              <p>Smart aquaculture and full-chain traceability system rollout.</p>
+              <span className="tag">Partnership</span>
+            </article>
+            <article className="card">
+              <strong>Hailing Gateway Routes Published</strong>
+              <p>Pingang + Hailing two-day routes now available (display).</p>
+              <span className="tag">Routes</span>
+            </article>
+          </div>
         </div>
       </section>
 

@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
 import Layout from "../../components/Layout.jsx";
 
+const heroBg =
+  "https://images.unsplash.com/photo-1581091012184-5c1d1d41c37b?auto=format&fit=crop&w=2000&q=80";
+
 export default function AiStudy() {
   return (
     <Layout lang="en" ctaLabel="Study Partnership" ctaTo="/en/contact">
-      <section className="hero">
+      <section className="hero hero-splash">
+        <div className="hero-splash-bg" style={{ backgroundImage: `url(${heroBg})` }}></div>
+        <div className="hero-splash-overlay"></div>
         <div className="container hero-content">
           <div>
             <span className="tag">Differentiated Science IP</span>
@@ -19,12 +24,6 @@ export default function AiStudy() {
               </Link>
             </div>
           </div>
-          <div className="hero-card">
-            <img
-              src="https://images.unsplash.com/photo-1581091012184-5c1d1d41c37b?auto=format&fit=crop&w=1600&q=80"
-              alt="Smart lab"
-            />
-          </div>
         </div>
       </section>
 
@@ -37,6 +36,32 @@ export default function AiStudy() {
           <div className="card">
             <strong>Machinery Culture Museum</strong>
             <p>Interactive exhibits from vintage tools to smart fishing devices.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-tight">
+        <div className="container">
+          <span className="eyebrow">Course Matrix</span>
+          <h2 className="section-title">Learning Pathways</h2>
+          <p className="section-subtitle">Structured learning by age group and theme with measurable outputs.</p>
+          <div className="matrix-grid reveal" style={{ marginTop: "24px" }}>
+            <div className="matrix-card">
+              <strong>Lower Grades</strong>
+              <p>Aquaponics basics, insect observation, eco experiments.</p>
+            </div>
+            <div className="matrix-card">
+              <strong>Middle Grades</strong>
+              <p>Water testing, fry incubation, circular ecology.</p>
+            </div>
+            <div className="matrix-card">
+              <strong>Upper Grades</strong>
+              <p>Aquaculture tech, machinery operation, AI data analysis.</p>
+            </div>
+            <div className="matrix-card">
+              <strong>Outputs</strong>
+              <p>Learning records, certificates, and project showcases.</p>
+            </div>
           </div>
         </div>
       </section>

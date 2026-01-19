@@ -29,19 +29,44 @@ export default function Hailing() {
       </section>
 
       <section className="section">
-        <div className="container nm-grid nm-grid-3 reveal">
-          <div className="card">
-            <strong>Pingang Farm Complex</strong>
-            <p>Resort, dining, fishing, science museum, and AI learning experiences.</p>
+        <div className="container">
+          <span className="eyebrow">Route Map</span>
+          <h2 className="section-title">Three-Stop Gateway Route</h2>
+          <div className="route-track reveal" style={{ marginTop: "24px" }}>
+            <div className="route-stop">
+              <strong>Pingang Farm Complex</strong>
+              Resorts, dining, study tours, and AI agriculture.
+            </div>
+            <div className="route-stop">
+              <strong>Hailing Island</strong>
+              Nanhai No.1 Museum, Zhapo port, and coastal culture.
+            </div>
+            <div className="route-stop">
+              <strong>International Exchange</strong>
+              Forums and cultural exchange programs.
+            </div>
           </div>
-          <div className="card">
-            <strong>Hailing Island</strong>
-            <p>Nanhai No.1 Museum, Zhapo Fishing Port, and coastal culture.</p>
-          </div>
-          <div className="card">
-            <strong>Exchange & Forum</strong>
-            <p>International AI aquaculture exchange base (display).</p>
-          </div>
+        </div>
+      </section>
+
+      <section className="section section-tight">
+        <div className="container nm-grid nm-grid-4 reveal">
+          <Link className="card" to="/en/hailing/mawei">
+            <strong>Mawei Cultural Center</strong>
+            <p>International cultural exchange and residency.</p>
+          </Link>
+          <Link className="card" to="/en/hailing/forum">
+            <strong>Maritime Economy Forum</strong>
+            <p>Blue economy and smart aquaculture.</p>
+          </Link>
+          <Link className="card" to="/en/hailing/wellbeing">
+            <strong>AI Wellbeing Center</strong>
+            <p>Support and learning programs (showcase).</p>
+          </Link>
+          <Link className="card" to="/en/hailing/maritime">
+            <strong>Maritime Museum</strong>
+            <p>Maritime history and science exhibits.</p>
+          </Link>
         </div>
       </section>
 

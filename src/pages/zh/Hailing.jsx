@@ -29,19 +29,44 @@ export default function Hailing() {
       </section>
 
       <section className="section">
-        <div className="container nm-grid nm-grid-3 reveal">
-          <div className="card">
-            <strong>平岗农场综合体</strong>
-            <p>民宿、餐饮、露天烧烤场、钓鱼、小海洋科普馆，叠加研学与AI农业科普体验。</p>
+        <div className="container">
+          <span className="eyebrow">Route Map</span>
+          <h2 className="section-title">三段式海岛联动动线</h2>
+          <div className="route-track reveal" style={{ marginTop: "24px" }}>
+            <div className="route-stop">
+              <strong>平岗农场综合体</strong>
+              民宿、餐饮、研学与AI农业体验。
+            </div>
+            <div className="route-stop">
+              <strong>海陵岛目的地</strong>
+              南海1号博物馆、闸坡渔港与海岛风光。
+            </div>
+            <div className="route-stop">
+              <strong>国际交流平台</strong>
+              国际论坛、文化交流与教育合作。
+            </div>
           </div>
-          <div className="card">
-            <strong>海陵岛目的地</strong>
-            <p>南海1号博物馆、闸坡国际渔港与海岛风光体验，形成文化与自然双线动线。</p>
-          </div>
-          <div className="card">
-            <strong>国际交流与论坛</strong>
-            <p>阳江国际AI水产养殖经验交流基地、国际文化交流与论坛（展示版）。</p>
-          </div>
+        </div>
+      </section>
+
+      <section className="section section-tight">
+        <div className="container nm-grid nm-grid-4 reveal">
+          <Link className="card" to="/hailing/mawei">
+            <strong>马尾岛文化交流中心</strong>
+            <p>国际文化展演与青年驻地计划。</p>
+          </Link>
+          <Link className="card" to="/hailing/forum">
+            <strong>国际海上经济论坛</strong>
+            <p>蓝色经济与智慧渔业交流。</p>
+          </Link>
+          <Link className="card" to="/hailing/wellbeing">
+            <strong>AI心理疗愈中心</strong>
+            <p>支持、陪伴与成长课程（展示版）。</p>
+          </Link>
+          <Link className="card" to="/hailing/maritime">
+            <strong>航海博物馆</strong>
+            <p>海洋文明与航海科技科普。</p>
+          </Link>
         </div>
       </section>
 

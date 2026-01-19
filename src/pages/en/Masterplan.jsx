@@ -19,11 +19,28 @@ export default function Masterplan() {
               </Link>
             </div>
           </div>
-          <div className="hero-card">
-            <img
-              src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80"
-              alt="Eco landscape"
-            />
+          <div className="plan-map">
+            <div className="plan-center">5,000 mu Eco Fishpond</div>
+            <div className="plan-node node-1">
+              <strong>Eco Farming</strong>
+              Fish · Veg · Flower · Herb
+            </div>
+            <div className="plan-node node-2">
+              <strong>AI & Study</strong>
+              Labs and museums
+            </div>
+            <div className="plan-node node-3">
+              <strong>Family Fun</strong>
+              Age-based play
+            </div>
+            <div className="plan-node node-4">
+              <strong>Stay & Dine</strong>
+              Resorts and dining
+            </div>
+            <div className="plan-node node-5">
+              <strong>Events</strong>
+              Seasonal festivals
+            </div>
           </div>
         </div>
       </section>
@@ -71,6 +88,23 @@ export default function Masterplan() {
           <div className="card">
             <strong>Two-day Getaway</strong>
             <p>Eco farming + night camping + Hailing Island.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-tight">
+        <div className="container">
+          <span className="eyebrow">Extended Zones</span>
+          <h2 className="section-title">Special Venues</h2>
+          <div className="nm-grid nm-grid-2 reveal" style={{ marginTop: "24px" }}>
+            <Link className="card" to="/en/masterplan/aquaculture-museum">
+              <strong>Aquaculture Museum</strong>
+              <p>Heritage, machinery interaction, and AI science exhibits.</p>
+            </Link>
+            <Link className="card" to="/en/masterplan/entrepreneurship">
+              <strong>Entrepreneurship Center</strong>
+              <p>Scenario access, data support, and incubation platform.</p>
+            </Link>
           </div>
         </div>
       </section>

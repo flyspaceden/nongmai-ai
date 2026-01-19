@@ -29,22 +29,31 @@ export default function HailingExchange() {
       </section>
 
       <section className="section">
-        <div className="container nm-grid nm-grid-2 reveal">
-          <div className="card">
-            <strong>阳江国际AI水产养殖经验交流基地</strong>
-            <p>面向国内外专家与行业组织的交流平台，承载培训、参访与标准化交流。</p>
-          </div>
-          <div className="card">
-            <strong>海陵马尾岛国际文化交流中心</strong>
-            <p>链接国际文化交流与海洋文明传播，形成品牌影响力。</p>
-          </div>
-          <div className="card">
-            <strong>海陵岛 AI+ 国际海上经济论坛</strong>
-            <p>聚焦AI水产、海洋经济与可持续发展议题。</p>
-          </div>
-          <div className="card">
-            <strong>AI+心理疗愈中心与航海博物馆</strong>
-            <p>结合身心成长与海洋文化展示，形成综合文化体验。</p>
+        <div className="container">
+          <span className="eyebrow">Exchange Matrix</span>
+          <h2 className="section-title">国际交流与文化展示矩阵</h2>
+          <p className="section-subtitle">以交流基地为枢纽，串联文化、论坛与教育空间。</p>
+          <div className="nm-grid nm-grid-2 reveal" style={{ marginTop: "24px" }}>
+            <div className="card">
+              <strong>AI水产养殖经验交流基地</strong>
+              <p>面向国内外专家与行业组织的交流平台，承载培训、参访与标准化交流。</p>
+            </div>
+            <Link className="card" to="/hailing/mawei">
+              <strong>马尾岛文化交流中心</strong>
+              <p>链接国际文化交流与海洋文明传播，形成品牌影响力。</p>
+            </Link>
+            <Link className="card" to="/hailing/forum">
+              <strong>AI+国际海上经济论坛</strong>
+              <p>聚焦AI水产、海洋经济与可持续发展议题。</p>
+            </Link>
+            <Link className="card" to="/hailing/wellbeing">
+              <strong>AI+心理疗愈中心</strong>
+              <p>身心支持与家庭成长课程（展示版）。</p>
+            </Link>
+            <Link className="card" to="/hailing/maritime">
+              <strong>航海博物馆</strong>
+              <p>海洋文明、航海科技与研学体验。</p>
+            </Link>
           </div>
         </div>
       </section>

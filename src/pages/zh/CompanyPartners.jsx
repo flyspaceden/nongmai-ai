@@ -4,7 +4,7 @@ import Layout from "../../components/Layout.jsx";
 export default function CompanyPartners() {
   return (
     <Layout lang="zh" ctaLabel="提交合作需求" ctaTo="/contact">
-      <section className="hero">
+      <section className="hero hero-centered">
         <div className="container hero-content">
           <div>
             <span className="tag">共建 · 共创 · 共赢</span>
@@ -18,12 +18,6 @@ export default function CompanyPartners() {
                 了解Nongmai AI
               </Link>
             </div>
-          </div>
-          <div className="hero-card">
-            <img
-              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80"
-              alt="合作与交流"
-            />
           </div>
         </div>
       </section>
@@ -45,6 +39,31 @@ export default function CompanyPartners() {
           <div className="card">
             <strong>品牌联名与媒体拍摄</strong>
             <p>活动赞助、联名产品、短视频拍摄与直播合作。</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-tight">
+        <div className="container">
+          <span className="eyebrow">Cooperation Flow</span>
+          <h2 className="section-title">合作流程</h2>
+          <div className="steps-grid reveal" style={{ marginTop: "24px" }}>
+            <div className="step-card">
+              <strong>提交需求</strong>
+              <p>明确目标、人数、预算与时间。</p>
+            </div>
+            <div className="step-card">
+              <strong>方案共创</strong>
+              <p>形成活动流程、课程与物料清单。</p>
+            </div>
+            <div className="step-card">
+              <strong>试运行</strong>
+              <p>小规模试运行与服务优化。</p>
+            </div>
+            <div className="step-card">
+              <strong>长期合作</strong>
+              <p>联名合作与年度计划执行。</p>
+            </div>
           </div>
         </div>
       </section>

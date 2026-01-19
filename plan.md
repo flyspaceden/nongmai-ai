@@ -1,5 +1,5 @@
 # 农脉AI静态官网内容与设计蓝图（plan.md）
-主题（CN）：**阳江永兴农脉 AI 国际渔田秘境**  
+主题（CN）：**阳江永兴-农脉 AI 国际渔田秘境**  
 主题（EN）：**Yangjiang Yongxing Nongmai AI International Fishpond Haven**（展示版，可后续调整正式英文命名）
 
 > 说明：本网站为**展示型静态网站**。部分板块（论坛/中心/基地等）若尚未落地，页面统一标注“规划/筹备中”，避免对外口径风险。
@@ -120,7 +120,7 @@ Built around a **5,000-mu eco fishpond landscape**, this destination combines **
 
 模块结构（建议顺序）：
 1) Hero
-   - CN 标题：阳江永兴农脉 AI 国际渔田秘境  
+   - CN 标题：阳江永兴-农脉 AI 国际渔田秘境  
    - CN 副标题：5000亩生态鱼塘｜AI科技研学｜农文旅休闲度假示范基地  
    - EN Title：Nongmai AI · International Fishpond Haven  
    - EN Subtitle：Eco Aquaculture · AI Learning · Culture & Leisure Destination
@@ -371,7 +371,7 @@ AI模块：新闻摘要与“本月热点”（展示）。
 ### 6.17 联系/预约 Contact & Booking（含表单）
 **对外信息（已确认）**
 - 电话：13923710623  
-- 邮箱：zengweifeng13@163.com  
+- 邮箱：zengweifeng3@163.com  
 - 地址（展示用，可后续改）：广东省阳江市高新区平岗农场10队（示意）
 
 表单字段（建议）：

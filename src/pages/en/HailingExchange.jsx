@@ -29,22 +29,31 @@ export default function HailingExchange() {
       </section>
 
       <section className="section">
-        <div className="container nm-grid nm-grid-2 reveal">
-          <div className="card">
-            <strong>International AI Aquaculture Exchange Base</strong>
-            <p>Training, visits, and standards exchange for global partners.</p>
-          </div>
-          <div className="card">
-            <strong>Mawei Island Cultural Center</strong>
-            <p>International cultural exchange and brand influence.</p>
-          </div>
-          <div className="card">
-            <strong>AI+ Maritime Economy Forum</strong>
-            <p>Focused on AI aquaculture and sustainable ocean economy.</p>
-          </div>
-          <div className="card">
-            <strong>AI Wellness & Maritime Museum</strong>
-            <p>Integrated wellness and maritime culture experiences.</p>
+        <div className="container">
+          <span className="eyebrow">Exchange Matrix</span>
+          <h2 className="section-title">International Exchange Programs</h2>
+          <p className="section-subtitle">A hub connecting cultural exchange, forums, and education spaces.</p>
+          <div className="nm-grid nm-grid-2 reveal" style={{ marginTop: "24px" }}>
+            <div className="card">
+              <strong>International AI Aquaculture Exchange Base</strong>
+              <p>Training, visits, and standards exchange for global partners.</p>
+            </div>
+            <Link className="card" to="/en/hailing/mawei">
+              <strong>Mawei Cultural Center</strong>
+              <p>International cultural exchange and brand influence.</p>
+            </Link>
+            <Link className="card" to="/en/hailing/forum">
+              <strong>AI+ Maritime Economy Forum</strong>
+              <p>Focused on AI aquaculture and sustainable ocean economy.</p>
+            </Link>
+            <Link className="card" to="/en/hailing/wellbeing">
+              <strong>AI Wellbeing Center</strong>
+              <p>Family support and learning programs (showcase).</p>
+            </Link>
+            <Link className="card" to="/en/hailing/maritime">
+              <strong>Maritime Museum</strong>
+              <p>Maritime civilization, navigation science, and education.</p>
+            </Link>
           </div>
         </div>
       </section>

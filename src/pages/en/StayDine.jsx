@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
 import Layout from "../../components/Layout.jsx";
 
+const heroBg =
+  "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80";
+
 export default function StayDine() {
   return (
     <Layout lang="en" ctaLabel="Book Stay" ctaTo="/en/contact">
-      <section className="hero">
+      <section className="hero hero-splash">
+        <div className="hero-splash-bg" style={{ backgroundImage: `url(${heroBg})` }}></div>
+        <div className="hero-splash-overlay"></div>
         <div className="container hero-content">
           <div>
             <span className="tag">Resorts · Dining · Night Activities</span>
@@ -19,28 +24,41 @@ export default function StayDine() {
               </Link>
             </div>
           </div>
-          <div className="hero-card">
-            <img
-              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80"
-              alt="Resort and camping"
-            />
-          </div>
         </div>
       </section>
 
       <section className="section">
-        <div className="container nm-grid nm-grid-3 reveal">
-          <div className="card">
-            <strong>Waterfront Courtyard</strong>
-            <p>Waterside stays with BBQ facilities and private gardens.</p>
+        <div className="container">
+          <span className="eyebrow">Stay Collection</span>
+          <h2 className="section-title">Theme Accommodations</h2>
+          <p className="section-subtitle">Three stay styles for waterside, pastoral, and family experiences.</p>
+          <div className="stay-gallery reveal" style={{ marginTop: "24px" }}>
+            <img
+              src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80"
+              alt="Waterfront Courtyard"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=1200&q=80"
+              alt="Garden Cabins"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=1200&q=80"
+              alt="Family Treehouses"
+            />
           </div>
-          <div className="card">
-            <strong>Garden Cabins</strong>
-            <p>Hidden among flowers and vegetable plots.</p>
-          </div>
-          <div className="card">
-            <strong>Family Treehouses</strong>
-            <p>Slides and mini yards for family-friendly stays.</p>
+          <div className="nm-grid nm-grid-3 reveal" style={{ marginTop: "24px" }}>
+            <div className="card">
+              <strong>Waterfront Courtyard</strong>
+              <p>Waterside stays with BBQ facilities and private gardens.</p>
+            </div>
+            <div className="card">
+              <strong>Garden Cabins</strong>
+              <p>Hidden among flowers and vegetable plots.</p>
+            </div>
+            <div className="card">
+              <strong>Family Treehouses</strong>
+              <p>Slides and mini yards for family-friendly stays.</p>
+            </div>
           </div>
         </div>
       </section>

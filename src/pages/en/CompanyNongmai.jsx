@@ -29,22 +29,27 @@ export default function CompanyNongmai() {
       </section>
 
       <section className="section">
-        <div className="container nm-grid nm-grid-4 reveal">
-          <div className="card">
-            <strong>AI Sensing</strong>
-            <p>Water, climate, video, and IoT data capture with alerts.</p>
-          </div>
-          <div className="card">
-            <strong>AI Decisions</strong>
-            <p>Feeding, water control, disease risk, and yield forecast.</p>
-          </div>
-          <div className="card">
-            <strong>AI Traceability</strong>
-            <p>Batch tracking from seedling to distribution.</p>
-          </div>
-          <div className="card">
-            <strong>AI Education</strong>
-            <p>Course management, interactive exhibits, learning records.</p>
+        <div className="container">
+          <span className="eyebrow">AI Stack</span>
+          <h2 className="section-title">AI Agriculture Capability Stack</h2>
+          <p className="section-subtitle">From sensing to decision-making and operations.</p>
+          <div className="steps-grid reveal" style={{ marginTop: "24px" }}>
+            <div className="step-card">
+              <strong>AI Sensing</strong>
+              <p>Water, climate, video, and IoT data capture with alerts.</p>
+            </div>
+            <div className="step-card">
+              <strong>AI Decisions</strong>
+              <p>Feeding, water control, disease risk, and yield forecast.</p>
+            </div>
+            <div className="step-card">
+              <strong>AI Traceability</strong>
+              <p>Batch tracking from seedling to distribution.</p>
+            </div>
+            <div className="step-card">
+              <strong>AI Education</strong>
+              <p>Course management, interactive exhibits, learning records.</p>
+            </div>
           </div>
         </div>
       </section>

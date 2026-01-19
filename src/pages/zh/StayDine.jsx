@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
 import Layout from "../../components/Layout.jsx";
 
+const heroBg =
+  "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80";
+
 export default function StayDine() {
   return (
     <Layout lang="zh" ctaLabel="预订住宿" ctaTo="/contact">
-      <section className="hero">
+      <section className="hero hero-splash">
+        <div className="hero-splash-bg" style={{ backgroundImage: `url(${heroBg})` }}></div>
+        <div className="hero-splash-overlay"></div>
         <div className="container hero-content">
           <div>
             <span className="tag">住 · 食 · 夜间体验</span>
@@ -19,28 +24,41 @@ export default function StayDine() {
               </Link>
             </div>
           </div>
-          <div className="hero-card">
-            <img
-              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80"
-              alt="海岸度假与露营"
-            />
-          </div>
         </div>
       </section>
 
       <section className="section">
-        <div className="container nm-grid nm-grid-3 reveal">
-          <div className="card">
-            <strong>渔乡别院</strong>
-            <p>临水而建，推窗见塘；配套独立庭院与烧烤台。</p>
+        <div className="container">
+          <span className="eyebrow">Stay Collection</span>
+          <h2 className="section-title">主题民宿集群</h2>
+          <p className="section-subtitle">三种房型形成“临水—田园—亲子”三条度假线路。</p>
+          <div className="stay-gallery reveal" style={{ marginTop: "24px" }}>
+            <img
+              src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80"
+              alt="渔乡别院"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?auto=format&fit=crop&w=1200&q=80"
+              alt="田园木屋"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=1200&q=80"
+              alt="亲子树屋"
+            />
           </div>
-          <div className="card">
-            <strong>田园木屋</strong>
-            <p>掩映在花田与菜园之间，适合轻度假与情侣出行。</p>
-          </div>
-          <div className="card">
-            <strong>亲子树屋</strong>
-            <p>带滑梯与小庭院，儿童友好，适合家庭入住。</p>
+          <div className="nm-grid nm-grid-3 reveal" style={{ marginTop: "24px" }}>
+            <div className="card">
+              <strong>渔乡别院</strong>
+              <p>临水而建，推窗见塘；配套独立庭院与烧烤台。</p>
+            </div>
+            <div className="card">
+              <strong>田园木屋</strong>
+              <p>掩映在花田与菜园之间，适合轻度假与情侣出行。</p>
+            </div>
+            <div className="card">
+              <strong>亲子树屋</strong>
+              <p>带滑梯与小庭院，儿童友好，适合家庭入住。</p>
+            </div>
           </div>
         </div>
       </section>

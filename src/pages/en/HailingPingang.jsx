@@ -29,18 +29,35 @@ export default function HailingPingang() {
       </section>
 
       <section className="section">
-        <div className="container nm-grid nm-grid-3 reveal">
-          <div className="card">
-            <strong>Leisure & Resort</strong>
-            <p>Resorts, dining, BBQ, fishing, and marine science exhibits.</p>
-          </div>
-          <div className="card">
-            <strong>Study & Education</strong>
-            <p>Science programs, aquaculture breeding, and AI agriculture learning.</p>
-          </div>
-          <div className="card">
-            <strong>Eco & Farming</strong>
-            <p>Wetland birds, plant observation, rice and vegetable bases.</p>
+        <div className="container">
+          <span className="eyebrow">Scenario Matrix</span>
+          <h2 className="section-title">Integrated Experience Matrix</h2>
+          <p className="section-subtitle">A full-day mix of leisure, education, and eco agriculture.</p>
+          <div className="matrix-grid reveal" style={{ marginTop: "24px" }}>
+            <div className="matrix-card">
+              <strong>Leisure & Resort</strong>
+              <p>Resorts, dining, BBQ, fishing, and marine science exhibits.</p>
+            </div>
+            <div className="matrix-card">
+              <strong>Study & Education</strong>
+              <p>Science programs, aquaculture breeding, and AI agriculture learning.</p>
+            </div>
+            <div className="matrix-card">
+              <strong>Eco & Farming</strong>
+              <p>Wetland birds, plant observation, rice and vegetable bases.</p>
+            </div>
+            <div className="matrix-card">
+              <strong>AI Learning Hub</strong>
+              <p>Smart aquaculture demos and AI agriculture exhibitions.</p>
+            </div>
+            <div className="matrix-card">
+              <strong>Saline Rice Base</strong>
+              <p>Special crop demonstrations and eco trials.</p>
+            </div>
+            <div className="matrix-card">
+              <strong>Herb Research</strong>
+              <p>Medicinal herb demonstration and wellness education.</p>
+            </div>
           </div>
         </div>
       </section>

@@ -21,11 +21,28 @@ export default function Masterplan() {
               </Link>
             </div>
           </div>
-          <div className="hero-card">
-            <img
-              src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80"
-              alt="园区水域与生态"
-            />
+          <div className="plan-map">
+            <div className="plan-center">5000亩生态鱼塘</div>
+            <div className="plan-node node-1">
+              <strong>生态农业体验</strong>
+              鱼-菜-花-药循环
+            </div>
+            <div className="plan-node node-2">
+              <strong>科技研学核心</strong>
+              实验室与博物馆
+            </div>
+            <div className="plan-node node-3">
+              <strong>亲子游乐互动</strong>
+              分龄游乐与手作
+            </div>
+            <div className="plan-node node-4">
+              <strong>休闲度假配套</strong>
+              民宿餐饮露营
+            </div>
+            <div className="plan-node node-5">
+              <strong>节庆赛事活动</strong>
+              四季主题活动
+            </div>
           </div>
         </div>
       </section>
@@ -73,6 +90,23 @@ export default function Masterplan() {
           <div className="card">
             <strong>两日轻度假</strong>
             <p>白天采摘+研学，夜晚露营星空；次日海陵岛联动。</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-tight">
+        <div className="container">
+          <span className="eyebrow">Extended Zones</span>
+          <h2 className="section-title">延展空间 · 特色场馆</h2>
+          <div className="nm-grid nm-grid-2 reveal" style={{ marginTop: "24px" }}>
+            <Link className="card" to="/masterplan/aquaculture-museum">
+              <strong>水产博物馆</strong>
+              <p>渔业文明、机械互动与AI科普展线。</p>
+            </Link>
+            <Link className="card" to="/masterplan/entrepreneurship">
+              <strong>大学生创业中心</strong>
+              <p>场景开放、数据支持与创业孵化平台。</p>
+            </Link>
           </div>
         </div>
       </section>

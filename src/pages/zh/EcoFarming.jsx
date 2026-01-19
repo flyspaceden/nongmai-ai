@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
 import Layout from "../../components/Layout.jsx";
 
+const heroBg =
+  "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=2000&q=80";
+
 export default function EcoFarming() {
   return (
     <Layout lang="zh">
-      <section className="hero">
+      <section className="hero hero-splash">
+        <div className="hero-splash-bg" style={{ backgroundImage: `url(${heroBg})` }}></div>
+        <div className="hero-splash-overlay"></div>
         <div className="container hero-content">
           <div>
             <span className="tag">产业根基 · 四季收益 · 可采摘可认养</span>
@@ -19,33 +24,36 @@ export default function EcoFarming() {
               </Link>
             </div>
           </div>
-          <div className="hero-card">
-            <img
-              src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=80"
-              alt="生态农业与花田"
-            />
-          </div>
         </div>
       </section>
 
       <section className="section">
-        <div className="container">
-          <span className="eyebrow">Fish · Veg · Flower · Herb</span>
-          <h2 className="section-title">塘垅立体种养园</h2>
-          <p className="section-subtitle">鱼塘周边垅地划分为时令菜园、经济花田与中草药园，实现“一亩三分地，四季有收益”。</p>
-          <div className="nm-grid nm-grid-3 reveal" style={{ marginTop: "32px" }}>
-            <div className="card">
-              <strong>时令菜园</strong>
-              <p>供采摘与认养，提供家庭共享地块与种植指导。</p>
+        <div className="container nm-grid nm-grid-2 reveal">
+          <div>
+            <span className="eyebrow">Fish · Veg · Flower · Herb</span>
+            <h2 className="section-title">塘垅立体循环系统</h2>
+            <p className="section-subtitle">鱼塘周边垅地划分为时令菜园、经济花田与中草药园，实现“一亩三分地，四季有收益”。</p>
+            <div className="matrix-grid" style={{ marginTop: "24px" }}>
+              <div className="matrix-card">
+                <strong>时令菜园</strong>
+                <p>供采摘与认养，家庭共享地块与种植指导。</p>
+              </div>
+              <div className="matrix-card">
+                <strong>经济花田</strong>
+                <p>格桑花、向日葵、薰衣草等观赏与花蜜采收。</p>
+              </div>
+              <div className="matrix-card">
+                <strong>中草药园</strong>
+                <p>石斛、艾草、金银花等科普种植。</p>
+              </div>
             </div>
-            <div className="card">
-              <strong>经济花田</strong>
-              <p>格桑花、向日葵、薰衣草等观赏花卉兼具花蜜采收价值。</p>
-            </div>
-            <div className="card">
-              <strong>中草药园</strong>
-              <p>石斛、艾草、金银花等，配套药用价值与科普信息标识。</p>
-            </div>
+          </div>
+          <div className="cycle-diagram">
+            <div className="cycle-ring"></div>
+            <div className="cycle-node node-a">鱼塘</div>
+            <div className="cycle-node node-b">菜园</div>
+            <div className="cycle-node node-c">花田</div>
+            <div className="cycle-node node-d">药园</div>
           </div>
         </div>
       </section>
@@ -59,6 +67,31 @@ export default function EcoFarming() {
           <div className="card">
             <strong>可购与加工</strong>
             <p>采收作物可现场加工或带走，提供真空包装、土特产组合与节令礼盒。</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-tight">
+        <div className="container">
+          <span className="eyebrow">Seasonal Rhythm</span>
+          <h2 className="section-title">四季体验节奏</h2>
+          <div className="event-calendar reveal" style={{ marginTop: "24px" }}>
+            <div className="event-season">
+              <strong>春季播种</strong>
+              <p>认养菜园、花田初放与亲子播种。</p>
+            </div>
+            <div className="event-season">
+              <strong>夏季生长</strong>
+              <p>田间养护、昆虫观察与夜间赏萤。</p>
+            </div>
+            <div className="event-season">
+              <strong>秋季采收</strong>
+              <p>丰收采摘、农产品市集与加工体验。</p>
+            </div>
+            <div className="event-season">
+              <strong>冬季养护</strong>
+              <p>土壤修复、药草课程与围炉课堂。</p>
+            </div>
           </div>
         </div>
       </section>

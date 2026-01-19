@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
 import Layout from "../../components/Layout.jsx";
 
+const heroBg =
+  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=80";
+
 export default function Events() {
   return (
     <Layout lang="zh" ctaLabel="活动报名" ctaTo="/contact">
-      <section className="hero">
+      <section className="hero hero-splash">
+        <div className="hero-splash-bg" style={{ backgroundImage: `url(${heroBg})` }}></div>
+        <div className="hero-splash-overlay"></div>
         <div className="container hero-content">
           <div>
             <span className="tag">四季主题 · 持续热度</span>
@@ -19,40 +24,53 @@ export default function Events() {
               </Link>
             </div>
           </div>
-          <div className="hero-card">
-            <img
-              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80"
-              alt="节庆活动"
-            />
-          </div>
         </div>
       </section>
 
       <section className="section">
-        <div className="container nm-grid nm-grid-2 reveal">
-          <div className="card">
-            <strong>春季 · 花海渔乐节</strong>
-            <p>赏花 + 捕鱼大赛，结合花田打卡与亲子互动。</p>
-          </div>
-          <div className="card">
-            <strong>夏季 · 星空露营季</strong>
-            <p>露营 + 稻田音乐会 + 星空电影，打造夜间社交体验。</p>
-          </div>
-          <div className="card">
-            <strong>秋季 · 丰收采摘节</strong>
-            <p>采收 + 农产品市集，形成可购与体验的闭环。</p>
-          </div>
-          <div className="card">
-            <strong>冬季 · 暖冬农趣节</strong>
-            <p>围炉煮茶 + 民俗体验，形成慢生活氛围。</p>
+        <div className="container">
+          <span className="eyebrow">Annual Calendar</span>
+          <h2 className="section-title">四季主题活动日历</h2>
+          <p className="section-subtitle">以节气与农事为节奏，形成全年持续热度。</p>
+          <div className="event-calendar reveal" style={{ marginTop: "24px" }}>
+            <div className="event-season">
+              <strong>春季 · 花海渔乐节</strong>
+              <p>赏花 + 捕鱼大赛，结合花田打卡与亲子互动。</p>
+            </div>
+            <div className="event-season">
+              <strong>夏季 · 星空露营季</strong>
+              <p>露营 + 稻田音乐会 + 星空电影。</p>
+            </div>
+            <div className="event-season">
+              <strong>秋季 · 丰收采摘节</strong>
+              <p>采收 + 农产品市集，形成可购与体验闭环。</p>
+            </div>
+            <div className="event-season">
+              <strong>冬季 · 暖冬农趣节</strong>
+              <p>围炉煮茶 + 民俗体验，营造慢生活氛围。</p>
+            </div>
           </div>
         </div>
       </section>
 
       <section className="section section-tight">
-        <div className="container card reveal">
-          <strong>定制化活动服务</strong>
-          <p>承接企业团建（拓展游戏 + 渔耕体验）、家庭聚会（生日派对 + 专属农事活动）、研学旅行（课程 + 食宿套餐），提供一站式策划执行。</p>
+        <div className="container">
+          <span className="eyebrow">Custom Services</span>
+          <h2 className="section-title">定制化活动服务</h2>
+          <div className="steps-grid reveal" style={{ marginTop: "24px" }}>
+            <div className="step-card">
+              <strong>企业团建</strong>
+              <p>拓展游戏 + 渔耕体验 + 团队协作任务。</p>
+            </div>
+            <div className="step-card">
+              <strong>家庭聚会</strong>
+              <p>生日派对 + 专属农事活动 + 亲子互动。</p>
+            </div>
+            <div className="step-card">
+              <strong>研学旅行</strong>
+              <p>定制课程 + 食宿套餐 + 结营证书。</p>
+            </div>
+          </div>
         </div>
       </section>
 

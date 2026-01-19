@@ -29,14 +29,33 @@ export default function HailingIsland() {
       </section>
 
       <section className="section">
-        <div className="container nm-grid nm-grid-2 reveal">
-          <div className="card">
-            <strong>Nanhai No.1 Museum</strong>
-            <p>An ocean culture and archeology landmark for study and family visits.</p>
+        <div className="container">
+          <span className="eyebrow">Island Highlights</span>
+          <h2 className="section-title">Hailing Island Highlights</h2>
+          <p className="section-subtitle">Marine culture, fishing heritage, and coastal leisure blended into a slow-travel route.</p>
+          <div className="stay-gallery reveal" style={{ marginTop: "24px" }}>
+            <img
+              src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80"
+              alt="Island view"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80"
+              alt="Coastal trail"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+              alt="Fishing port"
+            />
           </div>
-          <div className="card">
-            <strong>Zhapo Fishing Port</strong>
-            <p>Experience fishing culture and harbor life with local insights.</p>
+          <div className="nm-grid nm-grid-2 reveal" style={{ marginTop: "24px" }}>
+            <div className="card">
+              <strong>Nanhai No.1 Museum</strong>
+              <p>An ocean culture and archeology landmark for study and family visits.</p>
+            </div>
+            <div className="card">
+              <strong>Zhapo Fishing Port</strong>
+              <p>Experience fishing culture and harbor life with local insights.</p>
+            </div>
           </div>
         </div>
       </section>
