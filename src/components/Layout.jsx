@@ -273,6 +273,7 @@ export default function Layout({ lang = "zh", children, ctaLabel, ctaTo }) {
       <header>
         <div className="container navbar">
           <Link className="logo" to={config.brand.to}>
+            <img className="logo-mark" src={`${import.meta.env.BASE_URL}asset/logo.png`} alt="Nongmai AI logo" />
             <span>{config.brand.name}</span> {config.brand.sub}
           </Link>
           <nav className="nav-links">

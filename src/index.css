@@ -141,6 +141,10 @@
     @apply text-primary;
   }
 
+  .logo-mark {
+    @apply h-8 w-8 rounded-full object-contain;
+  }
+
   .nav-links {
     @apply hidden items-center gap-5 lg:flex;
   }
